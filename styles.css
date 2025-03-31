@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Up - Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Bounce Up</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="support.html" class="active">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="support-hero">
+        <div class="container">
+            <h1>Support Center</h1>
+            <p>Need help with Bounce Up? We're here to assist you.</p>
+            <div class="support-search">
+                <input type="text" placeholder="Search for help topics...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-options">
+        <div class="container">
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>FAQs</h3>
+                    <p>Find answers to commonly asked questions about Bounce Up.</p>
+                    <a href="#faqs" class="btn btn-secondary">View FAQs</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Contact Us</h3>
+                    <p>Reach out to our support team for personalized assistance.</p>
+                    <a href="#contact" class="btn btn-secondary">Contact Support</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Game Guide</h3>
+                    <p>Learn how to play and master Bounce Up with our comprehensive guide.</p>
+                    <a href="#guide" class="btn btn-secondary">Read Guide</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Report a Bug</h3>
+                    <p>Found an issue? Let us know so we can fix it in our next update.</p>
+                    <a href="#bug" class="btn btn-secondary">Report Bug</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I play Bounce Up?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bounce Up is a vertical platformer where you control a bouncing ball. Drag left and right to move the ball horizontally and land on platforms to bounce upward. The goal is to reach as high as possible while collecting coins and power-ups along the way. Avoid falling off the bottom of the screen or hitting the sides!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>My game is crashing or freezing. What should I do?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you're experiencing crashes or freezes, try these troubleshooting steps:</p>
+                        <ol>
+                            <li>Close all background apps and restart Bounce Up</li>
+                            <li>Restart your device</li>
+                            <li>Make sure your device's operating system is up to date</li>
+                            <li>Check if there's an update available for Bounce Up</li>
+                            <li>If problems persist, try uninstalling and reinstalling the app (make sure your progress is backed up first)</li>
+                        </ol>
+                        <p>If none of these solutions work, please contact our support team with details about your device and the issue you're experiencing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I redeem a promo code?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To redeem a promotional code:</p>
+                        <ol>
+                            <li>Open Bounce Up</li>
+                            <li>Go to the Shop</li>
+                            <li>Scroll down and tap on "Redeem Code"</li>
+                            <li>Enter your code and tap "Submit"</li>
+                        </ol>
+                        <p>Your rewards will be added to your account immediately after successful redemption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="game-guide">
+        <div class="container">
+            <h2>Game Guide</h2>
+            <div class="guide-content">
+                <div class="guide-section">
+                    <h3>Getting Started</h3>
+                    <p>Bounce Up is an exciting vertical platformer where your goal is to reach as high as possible by bouncing on platforms. Here's how to get started:</p>
+                    <ol>
+                        <li>Launch the game and tap anywhere on the screen to begin</li>
+                        <li>Control your ball by dragging left and right on the screen</li>
+                        <li>Land on platforms to bounce upward automatically</li>
+                        <li>Avoid falling off the bottom of the screen or hitting the side walls</li>
+                    </ol>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>Platform Types</h3>
+                    <p>As you climb higher, you'll encounter different types of platforms:</p>
+                    <ul>
+                        <li><strong>Blue Platforms:</strong> Standard platforms with normal bounce</li>
+                        <li><strong>Green Platforms:</strong> Bouncy platforms that launch you higher</li>
+                        <li><strong>Brown Platforms:</strong> Crumbling platforms that break after one bounce</li>
+                        <li><strong>Teal Platforms:</strong> Moving platforms that shift horizontally</li>
+                        <li><strong>Purple Platforms:</strong> Sticky platforms that reduce your bounce height</li>
+                        <li><strong>Orange Platforms:</strong> Trampoline platforms that provide super-high bounces</li>
+                    </ul>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>Collecting Items</h3>
+                    <p>Throughout your journey, you'll find various collectible items:</p>
+                    <ul>
+                        <li><strong>Coins:</strong> Collect these to purchase upgrades and customizations in the shop</li>
+                        <li><strong>Power-Ups:</strong> These provide temporary special abilities (see FAQ for details)</li>
+                    </ul>
+                    <p>The higher you climb, the more difficult the game becomes, but the rewards increase as well!</p>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>Tips & Tricks</h3>
+                    <ul>
+                        <li>Try to maintain a steady rhythm of bounces rather than making erratic movements</li>
+                        <li>Save power-ups for when you really need them</li>
+                        <li>Complete daily missions to earn bonus coins</li>
+                        <li>Upgrade your ball's bounce and control abilities in the shop to reach higher scores</li>
+                        <li>Keep an eye on upcoming platforms and plan your trajectory</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Support</h2>
+            <p class="contact-intro">Can't find what you're looking for? Reach out to our support team and we'll get back to you as soon as possible.</p>
+            
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="purchase">Purchase Issue</option>
+                            <option value="account">Account Problem</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            
+            <div class="alternative-contact">
+                <p>You can also reach us directly via email at:</p>
+                <a href="mailto:owwnwrrght@gmail.com" class="email-link">owwnwrrght@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="bug" class="bug-report">
+        <div class="container">
+            <h2>Report a Bug</h2>
+            <p>Found an issue with Bounce Up? Please provide as much detail as possible to help us fix it quickly.</p>
+            
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="bug-name">Your Name</label>
+                        <input type="text" id="bug-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bug-email">Email</label>
+                        <input type="email" id="bug-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="device">Device Model</label>
+                        <input type="text" id="device" name="device" placeholder="e.g., iPhone 15 Pro, Samsung Galaxy S24" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="os-version">OS Version</label>
+                        <input type="text" id="os-version" name="osVersion" placeholder="e.g., iOS 18.2, Android 15" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="app-version">App Version</label>
+                        <input type="text" id="app-version" name="appVersion" placeholder="e.g., 1.2.0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bug-description">Bug Description</label>
+                        <textarea id="bug-description" name="bugDescription" rows="5" placeholder="Please describe what happened, what you expected to happen, and any steps to reproduce the issue" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="screenshot">Upload Screenshot (optional)</label>
+                        <input type="file" id="screenshot" name="screenshot" accept="image/*">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Bug Report</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Bounce Up</h2>
+                    <p>© 2025 Owen Wright. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="mailto:owwnwrrght@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple accordion functionality for FAQs
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('.faq-toggle i');
+                    
+                    // Toggle answer visibility
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the different power-ups and what do they do?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bounce Up features several power-ups:</p>
+                        <ul>
+                            <li><strong>Double Jump:</strong> Allows you to jump once in mid-air</li>
+                            <li><strong>Shield:</strong> Protects you from falling off screen once</li>
+                            <li><strong>Magnet:</strong> Attracts your ball to nearby platforms</li>
+                            <li><strong>Super Bounce:</strong> Gives you extra-high bounces</li>
+                            <li><strong>Size Up:</strong> Increases your ball size for easier platform landings</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I restore my purchases?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To restore purchases:</p>
+                        <ol>
+                            <li>Open Bounce Up</li>
+                            <li>Go to the Shop</li>
+                            <li>Tap on the "Restore Purchases" button at the bottom</li>
+                            <li>Confirm when prompted</li>
+                        </ol>
+                        <p>If you're still having issues, please contact our support team.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I link my game progress across devices?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To sync your progress across multiple devices:</p>
+                        <ol>
+                            <li>Make sure you're signed in to Game Center (iOS) or Google Play Games (Android)</li>
+                            <li>Go to Settings in Bounce Up</li>
+                            <li>Tap on "Cloud Save" and enable cloud synchronization</li>
+                            <li>On your new device, sign in with the same account and enable cloud synchronization</li>
+                        </ol>
+                        <p>Your progress, coins, and unlocked items will be synced automatically.</p>
+                    </div>
