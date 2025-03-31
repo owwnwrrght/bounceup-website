@@ -1,377 +1,609 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bounce Up - Support</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Bounce Up</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="support.html" class="active">Support</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* 
+   Bounce Up Website Styles
+   Created by Claude AI for Owen Wright
+   March 30, 2025
+*/
 
-    <section class="support-hero">
-        <div class="container">
-            <h1>Support Center</h1>
-            <p>Need help with Bounce Up? We're here to assist you.</p>
-            <div class="support-search">
-                <input type="text" placeholder="Search for help topics...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-    </section>
+/* ===== RESET & BASE STYLES ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <section class="support-options">
-        <div class="container">
-            <div class="support-grid">
-                <div class="support-card">
-                    <div class="support-icon">
-                        <i class="fas fa-question-circle"></i>
-                    </div>
-                    <h3>FAQs</h3>
-                    <p>Find answers to commonly asked questions about Bounce Up.</p>
-                    <a href="#faqs" class="btn btn-secondary">View FAQs</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Contact Us</h3>
-                    <p>Reach out to our support team for personalized assistance.</p>
-                    <a href="#contact" class="btn btn-secondary">Contact Support</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Game Guide</h3>
-                    <p>Learn how to play and master Bounce Up with our comprehensive guide.</p>
-                    <a href="#guide" class="btn btn-secondary">Read Guide</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <i class="fas fa-bug"></i>
-                    </div>
-                    <h3>Report a Bug</h3>
-                    <p>Found an issue? Let us know so we can fix it in our next update.</p>
-                    <a href="#bug" class="btn btn-secondary">Report Bug</a>
-                </div>
-            </div>
-        </div>
-    </section>
+:root {
+    /* Color variables */
+    --primary-color: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary-color: #3a0ca3;
+    --accent-color: #7209b7;
+    --success-color: #22bb33;
+    --warning-color: #f4a261;
+    --error-color: #e63946;
+    --bg-dark: #0f172a;
+    --bg-medium: #1e293b;
+    --bg-light: #334155;
+    --text-light: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: #475569;
+    
+    /* Typography */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Other */
+    --border-radius: 8px;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    --transition: all 0.3s ease;
+}
 
-    <section id="faqs" class="faqs">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I play Bounce Up?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Bounce Up is a vertical platformer where you control a bouncing ball. Drag left and right to move the ball horizontally and land on platforms to bounce upward. The goal is to reach as high as possible while collecting coins and power-ups along the way. Avoid falling off the bottom of the screen or hitting the sides!</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>My game is crashing or freezing. What should I do?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>If you're experiencing crashes or freezes, try these troubleshooting steps:</p>
-                        <ol>
-                            <li>Close all background apps and restart Bounce Up</li>
-                            <li>Restart your device</li>
-                            <li>Make sure your device's operating system is up to date</li>
-                            <li>Check if there's an update available for Bounce Up</li>
-                            <li>If problems persist, try uninstalling and reinstalling the app (make sure your progress is backed up first)</li>
-                        </ol>
-                        <p>If none of these solutions work, please contact our support team with details about your device and the issue you're experiencing.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I redeem a promo code?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>To redeem a promotional code:</p>
-                        <ol>
-                            <li>Open Bounce Up</li>
-                            <li>Go to the Shop</li>
-                            <li>Scroll down and tap on "Redeem Code"</li>
-                            <li>Enter your code and tap "Submit"</li>
-                        </ol>
-                        <p>Your rewards will be added to your account immediately after successful redemption.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
 
-    <section id="guide" class="game-guide">
-        <div class="container">
-            <h2>Game Guide</h2>
-            <div class="guide-content">
-                <div class="guide-section">
-                    <h3>Getting Started</h3>
-                    <p>Bounce Up is an exciting vertical platformer where your goal is to reach as high as possible by bouncing on platforms. Here's how to get started:</p>
-                    <ol>
-                        <li>Launch the game and tap anywhere on the screen to begin</li>
-                        <li>Control your ball by dragging left and right on the screen</li>
-                        <li>Land on platforms to bounce upward automatically</li>
-                        <li>Avoid falling off the bottom of the screen or hitting the side walls</li>
-                    </ol>
-                </div>
-                
-                <div class="guide-section">
-                    <h3>Platform Types</h3>
-                    <p>As you climb higher, you'll encounter different types of platforms:</p>
-                    <ul>
-                        <li><strong>Blue Platforms:</strong> Standard platforms with normal bounce</li>
-                        <li><strong>Green Platforms:</strong> Bouncy platforms that launch you higher</li>
-                        <li><strong>Brown Platforms:</strong> Crumbling platforms that break after one bounce</li>
-                        <li><strong>Teal Platforms:</strong> Moving platforms that shift horizontally</li>
-                        <li><strong>Purple Platforms:</strong> Sticky platforms that reduce your bounce height</li>
-                        <li><strong>Orange Platforms:</strong> Trampoline platforms that provide super-high bounces</li>
-                    </ul>
-                </div>
-                
-                <div class="guide-section">
-                    <h3>Collecting Items</h3>
-                    <p>Throughout your journey, you'll find various collectible items:</p>
-                    <ul>
-                        <li><strong>Coins:</strong> Collect these to purchase upgrades and customizations in the shop</li>
-                        <li><strong>Power-Ups:</strong> These provide temporary special abilities (see FAQ for details)</li>
-                    </ul>
-                    <p>The higher you climb, the more difficult the game becomes, but the rewards increase as well!</p>
-                </div>
-                
-                <div class="guide-section">
-                    <h3>Tips & Tricks</h3>
-                    <ul>
-                        <li>Try to maintain a steady rhythm of bounces rather than making erratic movements</li>
-                        <li>Save power-ups for when you really need them</li>
-                        <li>Complete daily missions to earn bonus coins</li>
-                        <li>Upgrade your ball's bounce and control abilities in the shop to reach higher scores</li>
-                        <li>Keep an eye on upcoming platforms and plan your trajectory</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-light);
+    background: linear-gradient(to bottom, var(--bg-dark), var(--bg-medium));
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Support</h2>
-            <p class="contact-intro">Can't find what you're looking for? Reach out to our support team and we'll get back to you as soon as possible.</p>
-            
-            <div class="contact-form-container">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a topic</option>
-                            <option value="bug">Bug Report</option>
-                            <option value="purchase">Purchase Issue</option>
-                            <option value="account">Account Problem</option>
-                            <option value="suggestion">Suggestion</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-            
-            <div class="alternative-contact">
-                <p>You can also reach us directly via email at:</p>
-                <a href="mailto:owwnwrrght@gmail.com" class="email-link">owwnwrrght@gmail.com</a>
-            </div>
-        </div>
-    </section>
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+}
 
-    <section id="bug" class="bug-report">
-        <div class="container">
-            <h2>Report a Bug</h2>
-            <p>Found an issue with Bounce Up? Please provide as much detail as possible to help us fix it quickly.</p>
-            
-            <div class="contact-form-container">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="bug-name">Your Name</label>
-                        <input type="text" id="bug-name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="bug-email">Email</label>
-                        <input type="email" id="bug-email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="device">Device Model</label>
-                        <input type="text" id="device" name="device" placeholder="e.g., iPhone 15 Pro, Samsung Galaxy S24" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="os-version">OS Version</label>
-                        <input type="text" id="os-version" name="osVersion" placeholder="e.g., iOS 18.2, Android 15" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="app-version">App Version</label>
-                        <input type="text" id="app-version" name="appVersion" placeholder="e.g., 1.2.0" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="bug-description">Bug Description</label>
-                        <textarea id="bug-description" name="bugDescription" rows="5" placeholder="Please describe what happened, what you expected to happen, and any steps to reproduce the issue" required></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="screenshot">Upload Screenshot (optional)</label>
-                        <input type="file" id="screenshot" name="screenshot" accept="image/*">
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit Bug Report</button>
-                </form>
-            </div>
-        </div>
-    </section>
+h1 {
+    font-size: 2.75rem;
+}
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Bounce Up</h2>
-                    <p>© 2025 Owen Wright. All rights reserved.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Legal</h3>
-                    <ul>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="support.html">Help Center</a></li>
-                        <li><a href="mailto:owwnwrrght@gmail.com">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+h2 {
+    font-size: 2.25rem;
+}
 
-    <script>
-        // Simple accordion functionality for FAQs
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', () => {
-                    const answer = question.nextElementSibling;
-                    const icon = question.querySelector('.faq-toggle i');
-                    
-                    // Toggle answer visibility
-                    if (answer.style.maxHeight) {
-                        answer.style.maxHeight = null;
-                        icon.classList.remove('fa-minus');
-                        icon.classList.add('fa-plus');
-                    } else {
-                        answer.style.maxHeight = answer.scrollHeight + 'px';
-                        icon.classList.remove('fa-plus');
-                        icon.classList.add('fa-minus');
-                    }
-                });
-            });
-        });
-    </script>
-</body>
-</html>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What are the different power-ups and what do they do?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Bounce Up features several power-ups:</p>
-                        <ul>
-                            <li><strong>Double Jump:</strong> Allows you to jump once in mid-air</li>
-                            <li><strong>Shield:</strong> Protects you from falling off screen once</li>
-                            <li><strong>Magnet:</strong> Attracts your ball to nearby platforms</li>
-                            <li><strong>Super Bounce:</strong> Gives you extra-high bounces</li>
-                            <li><strong>Size Up:</strong> Increases your ball size for easier platform landings</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I restore my purchases?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>To restore purchases:</p>
-                        <ol>
-                            <li>Open Bounce Up</li>
-                            <li>Go to the Shop</li>
-                            <li>Tap on the "Restore Purchases" button at the bottom</li>
-                            <li>Confirm when prompted</li>
-                        </ol>
-                        <p>If you're still having issues, please contact our support team.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I link my game progress across devices?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>To sync your progress across multiple devices:</p>
-                        <ol>
-                            <li>Make sure you're signed in to Game Center (iOS) or Google Play Games (Android)</li>
-                            <li>Go to Settings in Bounce Up</li>
-                            <li>Tap on "Cloud Save" and enable cloud synchronization</li>
-                            <li>On your new device, sign in with the same account and enable cloud synchronization</li>
-                        </ol>
-                        <p>Your progress, coins, and unlocked items will be synced automatically.</p>
-                    </div>
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+ul, ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+}
+
+li {
+    margin-bottom: var(--spacing-xs);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+section {
+    padding: var(--spacing-xl) 0;
+}
+
+.grid {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.flex {
+    display: flex;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header {
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: var(--spacing-md) 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.75rem;
+    margin: 0;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-lg);
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+nav a:hover, 
+nav a.active {
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a.active {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-family: var(--font-main);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+    color: white;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(114, 9, 183, 0.15), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(67, 97, 238, 0.15), transparent 30%);
+    z-index: -1;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-md);
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-frame {
+    width: 280px;
+    height: 560px;
+    background-color: var(--bg-dark);
+    border-radius: 40px;
+    border: 8px solid var(--bg-light);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.game-preview {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    position: relative;
+}
+
+/* Game elements animation */
+.ball {
+    width: 30px;
+    height: 30px;
+    background-color: #ff5555;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 2s infinite;
+    box-shadow: 0 0 10px rgba(255, 85, 85, 0.6);
+}
+
+.platform {
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.p1 {
+    top: 70%;
+    background-color: #4361ee;
+    animation: sway1 4s infinite;
+}
+
+.p2 {
+    top: 50%;
+    background-color: #22bb33;
+    width: 80px;
+    animation: sway2 3s infinite;
+}
+
+.p3 {
+    top: 30%;
+    background-color: #f4a261;
+    width: 60px;
+    animation: sway3 3.5s infinite;
+}
+
+.coin {
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    animation: rotate 3s linear infinite;
+}
+
+.c1 {
+    top: 40%;
+    left: 30%;
+}
+
+.c2 {
+    top: 60%;
+    left: 70%;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 50%;
+    }
+    50% {
+        top: 40%;
+    }
+}
+
+@keyframes sway1 {
+    0%, 100% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-30%);
+    }
+}
+
+@keyframes sway2 {
+    0%, 100% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-70%);
+    }
+}
+
+@keyframes sway3 {
+    0%, 100% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-40%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== FEATURES SECTION ===== */
+.features {
+    background-color: var(--bg-medium);
+    padding: var(--spacing-xl) 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.feature-card {
+    background-color: rgba(15, 23, 42, 0.7);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(67, 97, 238, 0.15);
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-md);
+}
+
+.feature-icon i {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.feature-card h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* ===== SCREENSHOTS SECTION ===== */
+.screenshots {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.screenshots h2 {
+    margin-bottom: var(--spacing-xl);
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.screenshot {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.screenshot:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.screenshot-placeholder {
+    width: 100%;
+    height: 0;
+    padding-bottom: 180%; /* 16:9 aspect ratio */
+    background: linear-gradient(45deg, var(--bg-dark), var(--bg-medium));
+    position: relative;
+    overflow: hidden;
+}
+
+.screenshot-placeholder::after {
+    content: '📱 Screenshot';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* ===== LEGAL CONTENT SECTIONS ===== */
+.legal-content {
+    padding: var(--spacing-xl) 0;
+}
+
+.legal-content h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.updated-date {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-xl);
+    font-style: italic;
+}
+
+.legal-intro {
+    background-color: rgba(15, 23, 42, 0.5);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    border-left: 4px solid var(--primary-color);
+}
+
+.legal-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.legal-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-xs);
+}
+
+.legal-section h3 {
+    font-size: 1.25rem;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+/* ===== SUPPORT PAGE STYLES ===== */
+.support-hero {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, rgba(58, 12, 163, 0.1), rgba(67, 97, 238, 0.1));
+}
+
+.support-hero h1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.support-hero p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.support-search {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.support-search input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.support-search button {
+    position: absolute;
+    right: 5px;
